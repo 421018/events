@@ -1,0 +1,30 @@
+{
+  "$schema": "../schema/event.schema.json",
+  "id": "2026-11-23-testnet-rpc-degraded",
+  "type": "incident",
+  "network": "testnet",
+  "severity": "info",
+  "status": "resolved",
+  "startsAt": "2026-11-23T09:40:00Z",
+  "endsAt": "2026-11-23T11:05:00Z",
+  "title": "Slow responses from some testnet RPC endpoints",
+  "summary": "Some RPC providers responded slowly. The network kept producing blocks normally.",
+  "components": [
+    "rpc"
+  ],
+  "source": {
+    "kind": "manual"
+  },
+  "updates": [
+    {
+      "at": "2026-11-23T09:50:00Z",
+      "status": "in-progress",
+      "note": "Identified: two providers affected."
+    },
+    {
+      "at": "2026-11-23T11:05:00Z",
+      "status": "resolved",
+      "note": "Both providers respond normally."
+    }
+  ]
+}

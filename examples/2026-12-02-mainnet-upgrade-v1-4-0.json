@@ -1,0 +1,33 @@
+{
+  "$schema": "../schema/event.schema.json",
+  "id": "2026-12-02-mainnet-upgrade-v1-4-0",
+  "type": "upgrade",
+  "network": "mainnet",
+  "severity": "warning",
+  "status": "scheduled",
+  "startsAt": "2026-12-02T15:00:00Z",
+  "title": "The mainnet upgrades to version 1.4.0",
+  "summary": "Approved by governance. Node operators must run version 1.4.0 before the stated height.",
+  "components": [
+    "node",
+    "evm"
+  ],
+  "refs": {
+    "version": "v1.4.0",
+    "height": 4200000,
+    "proposals": [
+      17
+    ],
+    "chainId": "infinite_421018-1"
+  },
+  "links": [
+    {
+      "label": "Release notes",
+      "url": "https://example.org/releases/v1.4.0"
+    }
+  ],
+  "source": {
+    "kind": "process",
+    "name": "governance-watcher"
+  }
+}

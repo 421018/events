@@ -1,0 +1,32 @@
+{
+  "$schema": "../schema/event.schema.json",
+  "id": "2025-06-10-inflation-adjustment",
+  "type": "governance",
+  "network": "mainnet",
+  "severity": "info",
+  "status": "completed",
+  "startsAt": "2025-06-10T12:00:00Z",
+  "title": "Governance adjusts mainnet inflation",
+  "summary": "The approved proposal corrects the initial inflation and holds the surplus minted so far in a common address.",
+  "context": {
+    "problem": "The network was minting far more coins than planned in a very short time.",
+    "cause": "An initial parameter did not match the agreed inflation policy.",
+    "solution": "Adjust the inflation parameter.",
+    "decision": "The surplus minted because of the error is held in a common address; the validators who received it do not keep it.",
+    "plan": "Once the infrastructure exists, the surplus will be used to create, neutrally, a first liquidity pool so participants can buy and trade the coin; the counterpart liquidity is expected to come from participants."
+  },
+  "refs": {
+    "proposals": [
+      3
+    ],
+    "addresses": [
+      {
+        "address": "0x0000000000000000000000000000000000000042",
+        "label": "Common surplus address"
+      }
+    ]
+  },
+  "source": {
+    "kind": "manual"
+  }
+}
