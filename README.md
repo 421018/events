@@ -13,3 +13,17 @@ The record of network events for 42 Chain and Infinite Drive: releases, upgrades
 To change an event, append to its `updates`; never rewrite or delete what is there. To link it to an earlier event, add a `relations` entry in the new one.
 
 See [`examples/`](examples/) for complete events (illustrative data, never published).
+
+## Running and deploying
+
+There is nothing to run or deploy: this repository holds data and its
+specification, not an application.
+
+- **Locally:** check an event against [`schema/event.schema.json`](schema/event.schema.json)
+  (JSON Schema draft 2020-12) with any validator, or in an editor that reads
+  the file's `$schema`. The [`examples/`](examples/) follow it.
+- **Production:** events reach visitors through the site (the `42chain-site`
+  repository, published on Cloudflare Pages; its README explains how). Today
+  the site does not read this repository yet: its Events screen
+  (`/console/events`) says so and lists the kinds of event it will hold. When
+  it does, publishing an event will mean merging it here and rebuilding the site.
