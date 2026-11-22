@@ -22,7 +22,7 @@ specification, not an application.
 - **Locally:** check an event against [`schema/event.schema.json`](schema/event.schema.json)
   (JSON Schema draft 2020-12) with any validator, or in an editor that reads
   the file's `$schema`. The [`examples/`](examples/) follow it.
-- **Production:** events reach visitors through the site (the `42chain-site`
+- **Production:** events reach visitors through the site (the `site`
   repository, published on Cloudflare Pages; its README explains how). Today
   the site does not read this repository yet: its Events screen
   (`/console/events`) says so and lists the kinds of event it will hold. When
